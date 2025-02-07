@@ -423,6 +423,37 @@ span {
 
 
 
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-box h2 {
+    font-size: 3rem;
+    color: var(--main-color);
+}
+
+.contact-box p {
+    font-size: 1.5rem;
+}
+
+.contact-detail {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.contact-detail i {
+    color: var(--main-color);
+    padding: 1rem;
+    background: var(--second-bg-color);
+    font-size: 2.5rem;
+    border-radius: 1rem;
+}
 
 .contact h2 {
     margin-bottom: 3rem;
@@ -606,6 +637,10 @@ span {
 
 @media (max-width: 617px) {
     .projects-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-container {
         grid-template-columns: 1fr;
     }
 }
