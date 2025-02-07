@@ -45,10 +45,9 @@
                 Passionate frontend developer specializing in creating responsive and intuitive web experiences.
             </p>
             <div class="social-media">
-                <a href="#"><i class='bx bxl-facebook'></i></a>
-                <a href="#"><i class='bx bxl-github'></i></a>
-                <a href="#"><i class='bx bxl-whatsapp'></i></a>
-                <a href="#"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://www.facebook.com/sabbirsojib1441"><i class='bx bxl-facebook'></i></a>
+                <a href="https://github.com/Sabbir1441"><i class='bx bxl-github'></i></a>
+                <a href="https://www.linkedin.com/in/sabbir1441/"><i class='bx bxl-linkedin'></i></a>
             </div>
             <a href="#" class="btn">Download CV</a>
         </div>
@@ -117,39 +116,74 @@
         </div>
     </section>
 
-    <!-- projects section design -->
+    <!-- Projects Section Design -->
     <section class="projects" id="projects">
         <h2 class="heading">Latest <span>Projects</span></h2>
 
         <div class="projects-container">
-            <div class="projects-box">
-                <img src="images/room.png" alt="">
+            <div class="projects-box" onclick="showProject('room')">
+                <img src="images/room.png" alt="Room Haven">
                 <div class="projects-layer">
                     <h4>Room Haven</h4>
-                    <p>Room Haven is a modern, responsive hotel booking platform for easy room reservations and reviews.
-                    </p>
-                    <a href="#"><i class='bx bx-link-external'></i></a>
+                    <p>Modern, responsive hotel booking platform for easy reservations and reviews.</p>
+                    <a href="#room"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
-            <div class="projects-box">
-                <img src="images/lingo.png" alt="">
+            <div class="projects-box" onclick="showProject('lingo-bingo')">
+                <img src="images/lingo.png" alt="Lingo Bingo">
                 <div class="projects-layer">
                     <h4>Lingo Bingo</h4>
-                    <p>Lingo Bingo is an interactive platform to enhance vocabulary and communication skills.
-                    </p>
-                    <a href="#"><i class='bx bx-link-external'></i></a>
+                    <p>Interactive platform to enhance vocabulary and communication skills.</p>
+                    <a href="#lingo-bingo"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
-            <div class="projects-box">
-                <img src="images/scholarship.png" alt="">
+            <div class="projects-box" onclick="showProject('scholarship')">
+                <img src="images/scholarship.png" alt="NextGen Scholarships">
                 <div class="projects-layer">
-                    <h4>scholarship</h4>
-                    <p>NextGen Scholarships simplifies finding, applying for, and tracking scholarships with a seamless
-                        interface.</p>
-                    <a href="#"><i class='bx bx-link-external'></i></a>
+                    <h4>NextGen Scholarships</h4>
+                    <p>Find, apply for, and track scholarships with a seamless interface.</p>
+                    <a href="#scholarship"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
+        </div>
+    </section>
 
+    <!-- Project Details Section -->
+    <section class="project-details" id="project-details" style="display: none;">
+        <div id="room" class="project-info">
+            <h3>Room Haven</h3>
+            <img src="images/room.png" alt="Room Haven">
+            <p>Room Haven is a modern and responsive hotel booking website that allows users to browse and book rooms
+                easily. It features a seamless experience for users to view room details, check reviews, and submit
+                their own reviews.</p>
+            <p><strong>Technologies:</strong> Node.js, Firebase, MongoDB, React.js, TailwindCSS</p>
+            <div class="details-icon">
+                <a href="https://room-haven.web.app/"><i class='bx bx-globe'></i></a>
+                <a href="https://github.com/Sabbir1441/room-haven-client"><i class='bx bxl-github'></i></a>
+            </div>
+        </div>
+        <div id="lingo-bingo" class="project-info">
+            <h3>Lingo Bingo</h3>
+            <img src="images/lingo.png" alt="Lingo Bingo">
+            <p>Lingo Bingo is an interactive vocabulary learning application that helps users improve their language
+                skills in an engaging way. It offers features like Firebase Authentication, profile management, and
+                secure access to lessons and tutorials.</p>
+            <p><strong>Technologies:</strong> React, Firebase, TailwindCSS</p>
+            <div class="details-icon">
+                <a href="https://lingo-bingo-822a4.web.app/"><i class='bx bx-globe'></i></a>
+                <a href="https://github.com/Sabbir1441/Lingo-Bingo"><i class='bx bxl-github'></i></a>
+            </div>
+        </div>
+        <div id="scholarship" class="project-info">
+            <h3>NextGen Scholarships</h3>
+            <img src="images/scholarship.png" alt="NextGen Scholarships">
+            <p>NextGen Scholarships is a comprehensive Scholarship Management System that helps students search for
+                universities and scholarships, apply for them, and manage their applications.</p>
+            <p><strong>Technologies:</strong> React, Express, MongoDB, Stripe, Firebase Authentication, TailwindCSS</p>
+            <div- class="details-icon">
+                <a href="https://nextgen-scholarships.web.app/"><i class='bx bx-globe'></i></a>
+                <a href="https://github.com/Sabbir1441/nextgen-scholarships-client"><i class='bx bxl-github'></i></a>
+            </div>
         </div>
     </section>
 

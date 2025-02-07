@@ -50,9 +50,20 @@ ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
 
 const typed = new Typed('.multiple-text', {
-    strings: ['Frontend Developer!','Frontend Developer!','Frontend Developer!'],
+    strings: ['Frontend Developer!', 'Frontend Developer!', 'Frontend Developer!'],
     typeSpeed: 100,
     backSpeed: 100,
     BackDelay: 1000,
     loop: true
 })
+
+
+function showProject(projectId) {
+    document.getElementById("project-details").style.display = "block";
+
+    document.querySelectorAll(".project-info").forEach(project => {
+        project.style.display = "none";
+    });
+
+    document.getElementById(projectId).style.display = "block";
+}
